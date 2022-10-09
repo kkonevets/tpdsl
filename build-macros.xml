@@ -59,7 +59,7 @@
     <sequential>
         <!-- The libraries, for convenience we just import them into one path, the weird ../ assures we can run it from any directory where there is a build.xml -->
 
-      <javac destdir="${classes.dir}" target="1.5">
+      <javac destdir="${classes.dir}" target="19" includeantruntime="false">
         <classpath refid="@{cprefid}" />
         <src location="${src.dir}" />
       </javac>
